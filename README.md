@@ -73,4 +73,6 @@ Using SELECT to query data
 Using DELETE to delete data
 Using UPDATE to update data
 
+
 * means everything in that area
+LIMIT shortens the results to the top then however many after the LIMIT
