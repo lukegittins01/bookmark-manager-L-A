@@ -63,3 +63,14 @@ How to set up the database
 2. Create the database using the psql command CREATE DATABASE bookmark_manager;
 3. Connect to the database using the pqsl command \c bookmark_manager;
 4. Run the query we have saved in the file 01_create_bookmarks_table.sql
+
+Useful Commands
+---------------
+
+Using SELECT to view the table
+Using INSERT to add data to a table
+Using SELECT to query data
+Using DELETE to delete data
+Using UPDATE to update data
+
+* means everything in that area
