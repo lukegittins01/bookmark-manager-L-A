@@ -18,6 +18,12 @@ Add new bookmarks
 -----------------
 As a user i want a way to create a new bookmark so i can go back to a page
 
+--- Model ---
+- Client sends post request to the controller,
+- Controller posts a new bookmark to the model,
+- Model adds the new bookmark to the database,
+- Controller get the new bookmark and send it to the views(webpage) from the database,
+- The webpage is then returned to the controller which is then returned to the client.
 
 Delete bookmarks
 ----------------
