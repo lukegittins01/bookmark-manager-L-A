@@ -55,3 +55,11 @@ Users are restricted to manage only their own bookmarks
 -------------------------------------------------------
 As a user i only want to be able to change my bookmarks only
 No one else's.
+
+How to set up the database
+--------------------------
+
+1. Connect to psql
+2. Create the database using the psql command CREATE DATABASE bookmark_manager;
+3. Connect to the database using the pqsl command \c bookmark_manager;
+4. Run the query we have saved in the file 01_create_bookmarks_table.sql
