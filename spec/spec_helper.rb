@@ -1,10 +1,12 @@
-ENV['RACK_ENV'] = 'test'
+require_relative './setup_test_database'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
+
+ENV['ENVIRONMENT'] = 'test'
 
 Capybara.app = BookmarkManager
 
@@ -14,6 +16,9 @@ RSpec.configure do |config|
   end
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true
+  end
+  config.before(:each) do
+    setup_test_database
   end
   config.shared_context_metadata_behavior = :apply_to_host_groups
 end
